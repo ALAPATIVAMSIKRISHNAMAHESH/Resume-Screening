@@ -1,0 +1,17 @@
+We are looking for a DevOps Engineer to help us build functional systems that improve customer experience.
+DevOps Engineer responsibilities include deploying product updates, identifying production issues and implementing integrations that meet customer needs.
+Ultimately, you will execute and automate operational processes fast, accurately and securely.
+Implement integrations requested by customers
+Deploy updates and fixes
+Provide Level 2 technical support
+Build tools to reduce occurrences of errors and improve customer experience
+Develop software to integrate with internal back-end systems
+Perform root cause analysis for production errors
+Investigate and resolve technical issues
+Develop scripts to automate visualization
+Design procedures for system troubleshooting and maintenance.
+Work experience as a DevOps Engineer or similar software engineering role
+Good knowledge of Ruby or Python
+Working knowledge of databases and SQL
+Problem-solving attitude
+Team spirit.

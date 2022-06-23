@@ -1,0 +1,16 @@
+{% extends 'template.html'%}
+{% block head %}{% endblock %}
+{% block body %}
+<div class="container align-items-center" align="center">
+    <h1>Register</h1>
+    {% if error %} <p class=error style="color: orangered;"><strong>Error:</strong> {{ error }} </p> {% endif %}
+    <form class="form-group" action="{{ url_for('register') }}" method=post>
+        Username:<input type=text name=username required="true">
+        Password:
+        <input type=password name=password required="true" >
+        Confirm Password:
+        <input type=password name=confirm required><br>
+        <input name="submit" type=submit value=Register>
+    </form>
+  </div>
+{% endblock %}

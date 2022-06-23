@@ -1,0 +1,26 @@
+{% extends 'template.html'%}
+{% block head %}{% endblock %}
+{% block body %}
+<div class="container d-flex align-items-center justify-content-center">
+    <form action = "/upload" method = "POST" style="text-align:center" enctype = "multipart/form-data">
+    <div class="card" style="margin-top: 10%; padding: 10%;">
+        <div class="mb-3 form-group">
+            <label for="email" class="form-label">Enter your email</label>
+            <input class="form-control" name="email" type="email" id="email" required="true" email="true">
+        </div>
+        <label for="des" class="form-label">Select Job Profile</label>
+        <select name="des">
+            {% for r in results :%}
+            <option value = '{{r.name}}'>{{r.name[:-4]}}</option>
+            {% endfor %}
+        </select><br>
+        <div class="mb-3 form-group">
+            <label for="formFile" class="form-label">Upload Resume</label>
+            <input class="form-control" name="file" type="file" id="formFile" accept=".pdf , .docx , .doc" required="true">
+        </div>              
+    </div>
+    <br>
+    <button class="btn btn-primary" type="submit">Upload</button>
+    </form>
+</div>
+{% endblock %}

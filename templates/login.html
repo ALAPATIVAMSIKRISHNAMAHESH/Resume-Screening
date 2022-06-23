@@ -1,0 +1,15 @@
+{% extends 'template.html'%}
+{% block head %}{% endblock %}
+{% block body %}
+<div style="background-color:#BB6B24" class="container align-items-center" align="center">
+  <h1>Login</h1>
+  {% if error %} <p class=error style="color: orangered;"><strong>Error:</strong> {{ error }} </p> {% endif %}
+  <form action="{{ url_for('login') }}" method=post>
+      Username:<input type=text name=username>
+      Password:
+      <input type=password name=password>
+      <br><a href="{{ url_for('new') }}">New User</a><h6></h6>
+      <input style="background-color:#D8D8D8" type=submit value=login style="cursor: pointer;">
+  </form>
+</div>
+{% endblock %}

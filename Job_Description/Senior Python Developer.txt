@@ -1,0 +1,14 @@
+We are looking for a Senior Python Developer to build functional and efficient server-side applications.
+Senior Python Developer responsibilities include participating in all phases of the software development lifecycle and coaching junior developers.
+Your ultimate goal is to create high-quality products that meet customer needs.
+Help design and implement functional requirements
+Build efficient back-end features in Python
+Integrate front-end components into applications
+Manage testing and bug fixes
+Prepare technical documentation
+Solid experience as Python Developer
+Experience with Python frameworks (e.g. Django, Flask, Bottle)
+Familiarity with Amazon Web Services (AWS) and REST API
+Understanding of databases and SQL
+Knowledge of JavaScript and the AngularJS framework is a plus.
+Leadership skills.

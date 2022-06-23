@@ -1,0 +1,15 @@
+We are looking for a Senior .NET Developer to join our IT department and build functional applications and websites.
+Senior .NET Developer responsibilities include participating in the entire software development life cycle, debugging applications and configuring existing systems.
+Analyze system requirements and prioritize tasks
+Write clean, testable code using .NET programming languages
+Develop technical specifications and architecture
+Test and debug various .NET applications
+Review and refactor code
+Deploy fully functional applications
+Upgrade existing programs.
+Work experience as a .NET Developer
+Proficiency in building web-based applications
+In-depth knowledge of at least one of the .NET languages (like C# and Visual Basic .NET)
+Familiarity with agile environments
+Troubleshooting abilities
+Good communication skills

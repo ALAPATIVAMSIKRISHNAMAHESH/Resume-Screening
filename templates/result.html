@@ -1,0 +1,50 @@
+{% extends 'template.html'%}
+{% block head %}{% endblock %}
+{% block body %}
+<div id="top" class="row site">
+  <div class="col">
+    <div style="border-radius: 15px" class="paper">
+      <div class="demo-title">
+        <div class="row flex-center">
+          <div class="text-center">
+            <h1 style="border-bottom: 2px solid darkgrey;">Automated Resume Ranking System</h1>
+          </div>
+        </div>
+      </div>
+      <div class="to-top">
+        <a style="color:black" href="#top" class="paper-btn margin">^</a>
+      </div>
+    <div class="section">   
+      <table class="table-hover">
+        <thead>
+          <tr>
+          <th>Rank</th>
+          <th>Name</th>
+          <th>Resume</th>
+          <th>E-Mail</th>
+          <!-- <th>Experience</th> -->
+          <th>Skills</th>
+          <th></th>
+          </tr>
+        </thead>
+			{% for r in results :%}
+				<tbody>
+			  		<tr>
+						<td>{{loop.index}}</td>
+            <td>{{r.data.name}}</td>
+						<td><a href="{{url_for('custom_static', filename=r.resume)}}">{{r.resume}}</a></td>
+            <td>{{r.email}}</td>
+            <!-- <td>{{r.data.total_experience}} years</td> -->
+            <td>{{', '.join(r.data.skills)}}</td>
+            <td><form action="/mail" target="_blank" method='POST'><button class="btn btn-info" type="submit" value="{{r.email}}" name="email">Send Mail</button></form></td>
+			  		</tr>
+				</tbody>
+			{% endfor %}
+		  </table><br>
+      <form action="/" method="GET" style="text-align:center">
+        <button type="submit">Do it again</button>
+      </form>
+	  </div>
+  </div>
+</div>
+{% endblock %}
